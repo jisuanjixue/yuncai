@@ -3,6 +3,9 @@
 module.exports = {
   presets: [
     ['taro', {
+      targets: {
+        ios: '12'
+      },
       framework: 'react',
       ts: true
     }]

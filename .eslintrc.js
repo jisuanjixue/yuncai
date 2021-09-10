@@ -6,6 +6,7 @@ module.exports = {
     commonjs: true,
     node: true
   },
+  parser: "@typescript-eslint/parser",
   /*
    * The order of extending each plugin matters a LOT!!
    * Thus don't change order of items in this array
@@ -13,9 +14,11 @@ module.exports = {
    */
   extends: [
     "plugin:json/recommended",
-    "eslint:recommended",
     "plugin:react/recommended",
-    "prettier"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    // 'prettier/@typescript-eslint',
+    "eslint:recommended"
   ],
   settings: {
     react: {
@@ -36,7 +39,6 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module"
   },
-  parser: "babel-eslint",
   plugins: ["react", "prettier", "import", "react-hooks"],
   rules: {
     // auto-fixable: Respect all Prettier rules and apply it.
