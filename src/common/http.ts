@@ -12,6 +12,7 @@ import timeoutMiddleware, { TimeoutInject } from "@prequest/timeout";
 import InterceptorMiddleware from "@prequest/interceptor";
 import Lock from "@prequest/lock";
 import { createDownload, createUpload } from "@prequest/miniprogram-addon";
+import { BaseInterfaceURL } from "../utils/urls";
 
 // 注入自定义请求类型
 interface CustomRequest {
@@ -22,7 +23,7 @@ type InjectRequest = CustomRequest & TimeoutInject<Request> & CacheInject;
 type RequestOption = Request & InjectRequest;
 
 // 全局配置
-PreQuest.defaults.baseURL = "baseurl: 'https://tsnf.laocainonghe.com'";
+PreQuest.defaults.baseURL = BaseInterfaceURL;
 PreQuest.defaults.header = {};
 
 // 全局中间件
