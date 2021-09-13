@@ -2,16 +2,24 @@
 // https://github.com/NervJS/taro/blob/next/packages/babel-preset-taro/README.md
 module.exports = {
   presets: [
-    ['taro', {
-      targets: {
-        ios: '12'
-      },
-      framework: 'react',
-      ts: true
-    }]
+    [
+      "taro",
+      {
+        targets: {
+          ios: "12"
+        },
+        framework: "react",
+        ts: true
+      }
+    ]
   ],
-  plugins: [['import', {
-    libraryName: 'antd-mobile',
-    style: 'css'
-  }]]
-}
+  plugins: [
+    [
+      "import",
+      {
+        libraryName: "antd-mobile",
+        style: "css"
+      }
+    ]
+  ]
+};

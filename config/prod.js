@@ -3,8 +3,7 @@ module.exports = {
   env: {
     NODE_ENV: '"production"'
   },
-  defineConstants: {
-  },
+  defineConstants: {},
   mini: {
     module: {
       postcss: {
@@ -23,18 +22,15 @@ module.exports = {
   },
   terser: {
     enable: true,
-    config: {
-    }
+    config: {}
   },
   csso: {
     enable: true,
-    config: {
-    }
+    config: {}
   },
   uglify: {
     enable: true,
-    config: {
-    }
+    config: {}
   },
   h5: {}
-}
+};

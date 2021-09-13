@@ -11,14 +11,34 @@ const config = {
     828: 1.81 / 2
   },
   sourceRoot: "src",
-  outputRoot: "dist",
-  defineConstants: {},
+  outputRoot: `dist/${process.env.TARO_ENV}`,
+  defineConstants: {
+    IS_H5: process.env.TARO_ENV === "h5",
+    IS_RN: process.env.TARO_ENV === "rn",
+    IS_WEAPP: process.env.TARO_ENV === "weapp"
+  },
   alias: {
     "@/utils": resolve(__dirname, "..", "src/utils"),
     "@/components": resolve(__dirname, "..", "src/components"),
-    "@/libs": resolve(__dirname, "..", "src/libs")
+    "@/libs": resolve(__dirname, "..", "src/libs"),
+    "@src": resolve(__dirname, "..", "src"),
+    "@service": resolve(__dirname, "..", "src/service")
   },
-  plugins: ["@tarojs/plugin-html", "tarojs-router-next-plugin"],
+  plugins: [
+    [
+      "@tarojs/plugin-html",
+      {
+        modifyElements(inline: string[], block: string[]) {
+          // 行内元素增加 <xxx>
+          inline.push("xxx");
+          // 行内元素添加 <span>，块级元素删除 <span>
+          inline.push("span");
+          block.splice(block.indexOf("span"), 1);
+        }
+      }
+    ],
+    "tarojs-router-next-plugin"
+  ],
   copy: {
     patterns: [],
     options: {}
@@ -69,9 +89,12 @@ const config = {
     // }
   },
   h5: {
-    publicPath: "/",
+    publicPath: "/Yuncaiyitong",
     staticDirectory: "static",
     postcss: {
+      pxtransform: {
+        enable: true
+      },
       autoprefixer: {
         enable: true,
         config: {}
