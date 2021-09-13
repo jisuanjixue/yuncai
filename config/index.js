@@ -18,11 +18,7 @@ const config = {
     "@/components": resolve(__dirname, "..", "src/components"),
     "@/libs": resolve(__dirname, "..", "src/libs")
   },
-  plugins: [
-    "@tarojs/plugin-html",
-    "@tarojs/plugin-react-devtools",
-    "tarojs-router-next-plugin"
-  ],
+  plugins: ["@tarojs/plugin-html", "tarojs-router-next-plugin"],
   copy: {
     patterns: [],
     options: {}

@@ -3,8 +3,8 @@ module.exports = {
   env: {
     NODE_ENV: '"development"'
   },
-  defineConstants: {
-  },
+  defineConstants: {},
+  plugins: ["@tarojs/plugin-react-devtools"],
   mini: {
     module: {
       postcss: {
@@ -22,4 +22,4 @@ module.exports = {
     }
   },
   h5: {}
-}
+};

@@ -10382,6 +10382,14 @@ react-devtools-core@4.14.0:
     shell-quote "^1.6.1"
     ws "^7"
 
+react-devtools-core@4.18.0:
+  version "4.18.0"
+  resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-4.18.0.tgz#06b2375dcea7858c957d1779cc2339d2a0af200a"
+  integrity sha512-Kg/LhDkdt9J0ned1D1RfeuSdX4cKW83/valJLYswGdsYc0g2msmD0kfYozsaRacjDoZwcKlxGOES1wrkET5O6Q==
+  dependencies:
+    shell-quote "^1.6.1"
+    ws "^7"
+
 react-devtools@4.14.0:
   version "4.14.0"
   resolved "https://registry.yarnpkg.com/react-devtools/-/react-devtools-4.14.0.tgz#d6ff008be6c4fe26b72b3aea3b295e65d590527b"
@@ -10392,6 +10400,18 @@ react-devtools@4.14.0:
     ip "^1.1.4"
     minimist "^1.2.3"
     react-devtools-core "4.14.0"
+    update-notifier "^2.1.0"
+
+react-devtools@^4.18.0:
+  version "4.18.0"
+  resolved "https://registry.yarnpkg.com/react-devtools/-/react-devtools-4.18.0.tgz#9c3cac42b0a4aa0800f7b60200e10f563bbac758"
+  integrity sha512-VQpHSJjBY0Rayp3S7myMYHs4oq11iYFkNgWzMHiLhaMm/T5D9CbGcO0kYrSfGe9BvQCU+I8jHVB5p1MZtlO1IQ==
+  dependencies:
+    cross-spawn "^5.0.1"
+    electron "^11.1.0"
+    ip "^1.1.4"
+    minimist "^1.2.3"
+    react-devtools-core "4.18.0"
     update-notifier "^2.1.0"
 
 react-dom@^16.10.0:
@@ -12418,11 +12438,6 @@ taro-css-to-react-native@3.3.6:
     css-color-keywords "^1.0.0"
     css-mediaquery "^0.1.2"
     postcss-value-parser "^3.3.0"
-
-taro-tailwind@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/taro-tailwind/-/taro-tailwind-1.0.2.tgz#85a70efe4bb6e6416cbcfb51799674215ada0424"
-  integrity sha512-WUpyHiZTLdOl94htoOBNTjXtyKPAkyfV2HSjzIWz1rqcHNV2ycz4wv4w0MAI2QC/ynuVWB1zZ7TK+l5/B0Xi8Q==
 
 taro-virtual-list@^1.0.12:
   version "1.0.12"

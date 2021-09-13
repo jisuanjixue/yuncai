@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import Taro from "@tarojs/taro";
-import { Provider } from "react-redux";
+// import { Provider } from "react-redux";
 import "taro-ui/dist/style/index.scss"; // 全局引入一次即可
-import store from "./appStore";
+// import store from "./appStore";
 import "./tailwind.css";
 
 class App extends Component {
@@ -73,7 +73,7 @@ class App extends Component {
   // 在 App 类中的 render() 函数没有实际作用
   // 请勿修改此函数
   render() {
-    return <Provider store={store}>{this.props.children}</Provider>;
+    return this.props.children;
   }
 }
 
