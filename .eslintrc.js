@@ -41,6 +41,7 @@ module.exports = {
   },
   plugins: ["react", "prettier", "import", "react-hooks"],
   rules: {
+    "@typescript-eslint/no-var-requires": 0,
     // auto-fixable: Respect all Prettier rules and apply it.
     "prettier/prettier": "error",
     // auto-fixable: Indent by 2 spaces. Same as editorconfig and Rubocop config.

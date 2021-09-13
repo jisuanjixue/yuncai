@@ -107,10 +107,14 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^7.0.0",
     "lint-staged": "^11.1.2",
+    "postcss": "^8.3.6",
     "prettier": "^2.3.2",
     "stylelint": "9.3.0",
+    "tailwind-taro": "^0.0.1",
+    "tailwindcss": "^2.2.15",
+    "taro-tailwind": "^1.0.2",
     "tarojs-router-next-plugin": "^2.5.3",
     "typescript": "^4.1.0",
-    "webpack-bundle-analyzer": "^4.4.1"
+    "webpack-bundle-analyzer": "^4.4.2"
   }
 }

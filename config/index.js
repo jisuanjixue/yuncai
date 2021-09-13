@@ -30,13 +30,11 @@ const config = {
   framework: "react",
   mini: {
     postcss: {
+      tailwindcss: { enable: true },
+      "tailwind-taro": { enable: true },
       pxtransform: {
         enable: true,
         config: { browsers: ["last 3 versions", "Android >= 4.1", "ios >= 8"] }
-      },
-      pxtransform: {
-        enable: true,
-        config: {}
       },
       url: {
         enable: true,
@@ -98,4 +96,4 @@ export default function (merge) {
     return merge({}, config, require("./dev"));
   }
   return merge({}, config, require("./prod"));
-};
+}

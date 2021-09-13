@@ -3,7 +3,7 @@ import Taro from "@tarojs/taro";
 import { Provider } from "react-redux";
 import "taro-ui/dist/style/index.scss"; // 全局引入一次即可
 import store from "./appStore";
-import "./app.scss";
+import "./tailwind.css";
 
 class App extends Component {
   onLaunch() {
