@@ -1,6 +1,10 @@
 import { useEffect } from "react";
 
-function useClickInside(ref: any, callback: any): void {
+interface REF {
+  current?: any;
+}
+
+function useClickInside(ref: REF, callback: () => void): void {
   const handleClick = e => {
     if (ref.current && ref.current.contains(e.target)) {
       callback();
@@ -14,4 +18,4 @@ function useClickInside(ref: any, callback: any): void {
   });
 }
 
-export { useClickInside };
+export default useClickInside;

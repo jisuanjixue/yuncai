@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
-
-const useToggler = (initialState: boolean) => {
+// true与false 的开关
+const useToggler = (initialState: boolean): any[] => {
   const [value, setValue] = useState(initialState);
 
   const toggleValue: any = useCallback(() => setValue(prev => !prev), []);
@@ -8,4 +8,4 @@ const useToggler = (initialState: boolean) => {
   return [value, toggleValue];
 };
 
-export { useToggler };
+export default useToggler;

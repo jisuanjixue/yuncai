@@ -1,6 +1,10 @@
 import { useEffect } from "react";
 
-function useClickOutside(ref: any, callback: any): void {
+interface REF {
+  current?: any;
+}
+
+function useClickOutside(ref: REF, callback: () => void): void {
   const handleClick = e => {
     if (ref.current && !ref.current.contains(e.target)) {
       callback();
@@ -14,4 +18,4 @@ function useClickOutside(ref: any, callback: any): void {
   });
 }
 
-export { useClickOutside };
+export default useClickOutside;

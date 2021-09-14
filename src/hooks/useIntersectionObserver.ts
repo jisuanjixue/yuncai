@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 
+interface REF {
+  current?: any;
+}
+
 //观察给定元素的可见性变化。
-function useIntersectionObserver<T>(ref: any, options: T): boolean {
+function useIntersectionObserver<T>(ref: REF, options: T): boolean {
   const [isIntersecting, setIsIntersecting] = useState(false);
 
   useEffect(() => {
@@ -21,4 +25,4 @@ function useIntersectionObserver<T>(ref: any, options: T): boolean {
   return isIntersecting;
 }
 
-export { useIntersectionObserver };
+export default useIntersectionObserver;

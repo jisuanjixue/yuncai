@@ -9,4 +9,4 @@ const useBodyScrollLock = function (): void {
   }, []);
 };
 
-export { useBodyScrollLock };
+export default useBodyScrollLock;

@@ -19,4 +19,4 @@ function useEventListener<T>(type: string, handler: T, el = window): void {
   }, [type, el]);
 }
 
-export { useEventListener };
+export default useEventListener;
