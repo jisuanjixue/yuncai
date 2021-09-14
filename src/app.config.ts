@@ -1,7 +1,7 @@
 export default {
   pages: [
     "pages/index/index",
-    // "pages/tradinghall/tradinghall",
+    "pages/tradinghall/index",
     // "pages/release/release",
     // "pages/circle/circle",
     "pages/my/index"
@@ -26,12 +26,12 @@ export default {
         // selectedIconPath: "./assets/images/home.png",
         text: "首页"
       },
-      // {
-      //   pagePath: "pages/tradinghall/tradinghall",
-      //   text: "交易大厅",
-      //   iconPath: "./assets/icon-jydt-nor.png",
-      //   selectedIconPath: "./assets/icon-jydt-sel.png"
-      // },
+      {
+        pagePath: "pages/tradinghall/index",
+        text: "交易大厅"
+        // iconPath: "./assets/icon-jydt-nor.png",
+        // selectedIconPath: "./assets/icon-jydt-sel.png"
+      },
       // {
       //   pagePath: "pages/release/release",
       //   text: "发布",

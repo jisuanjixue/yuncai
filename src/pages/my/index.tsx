@@ -1,8 +1,8 @@
 import React from "react";
 import { View } from "@tarojs/components";
 
-const My = () => {
-  return <View>你好呀！！！</View>;
+const My: React.FC = () => {
+  return <View>你！</View>;
 };
 
 export default My;

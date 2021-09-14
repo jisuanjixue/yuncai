@@ -6,7 +6,7 @@ import "taro-ui/dist/style/index.scss"; // 全局引入一次即可
 import "./tailwind.css";
 
 class App extends Component {
-  onLaunch() {
+  onLaunch(): any {
     // 自定义promis的finally，防止小程序ios下的报错
     if (!Promise.prototype.finally) {
       Promise.prototype.finally = function (callback: any) {
@@ -49,7 +49,7 @@ class App extends Component {
     });
   }
 
-  componentDidShow() {
+  componentDidShow(): any {
     Taro.setKeepScreenOn({
       keepScreenOn: true
     });
@@ -72,7 +72,7 @@ class App extends Component {
 
   // 在 App 类中的 render() 函数没有实际作用
   // 请勿修改此函数
-  render() {
+  render(): any {
     return this.props.children;
   }
 }

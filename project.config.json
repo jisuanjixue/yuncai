@@ -5,8 +5,8 @@
   "appid": "wx00368c2a4e0070c2",
   "setting": {
     "urlCheck": true,
-    "es6": true,
-    "enhance": true,
+    "es6": false,
+    "enhance": false,
     "postcss": true,
     "preloadBackgroundData": false,
     "minified": true,
@@ -46,7 +46,7 @@
       "desc": "你的位置信息将用于小程序位置接口的效果展示"
     }
   },
-  "libVersion": "2.18.1",
+  "libVersion": "2.19.4",
   "scripts": {
     "beforeCompile": ""
   },
