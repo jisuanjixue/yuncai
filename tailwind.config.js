@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["./src/**/*.vue"],
+  purge: ["./src/**/*.tsx"],
   corePlugins: {
     // 涉及到子代选择器（>），wx 小程序不支持
     space: false,

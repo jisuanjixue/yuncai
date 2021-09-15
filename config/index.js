@@ -20,7 +20,16 @@ const config = {
     "@src": resolve(__dirname, "..", "src"),
     "@service": resolve(__dirname, "..", "src/service")
   },
-  plugins: ["@tarojs/plugin-html", "tarojs-router-next-plugin"],
+  plugins: [
+    [
+      "@tarojs/plugin-html",
+      {
+        // 过滤 antd 组件库的前缀：am-
+        pxtransformBlackList: [/am-/, /demo-/, /^body/]
+      }
+    ],
+    "tarojs-router-next-plugin"
+  ],
   copy: {
     patterns: [],
     options: {}

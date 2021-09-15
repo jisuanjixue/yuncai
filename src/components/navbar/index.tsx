@@ -43,7 +43,7 @@ class NavBar extends React.Component {
     };
   }
 
-  componentDidMount() {
+  componentDidMount(): any {
     const { model, system, statusBarHeight, screenWidth } =
       Taro.getSystemInfoSync();
     const { height: menuButtonHeight, left } =
@@ -60,12 +60,12 @@ class NavBar extends React.Component {
     });
   }
 
-  handleNavigateBack = () => {
+  handleNavigateBack = (): void => {
     Taro.navigateBack();
   };
 
   // 渲染左侧按钮组
-  renderLeftBtns(withTitle) {
+  renderLeftBtns(withTitle: boolean): any {
     // 高度和胶囊一致
     const { menuButtonHeight } = this.state;
     // 有标题的右侧间距，跟右侧胶囊一样，87的宽度，去掉当前占的位置
@@ -89,7 +89,7 @@ class NavBar extends React.Component {
   }
 
   // 渲染标题
-  renderTitle() {
+  renderTitle(): any {
     const { title } = this.props;
     const { menuButtonWidth } = this.state;
     return (
@@ -99,7 +99,7 @@ class NavBar extends React.Component {
     );
   }
 
-  rendeBackAndTitle() {
+  rendeBackAndTitle(): any {
     return (
       <Block>
         {this.renderLeftBtns(true)}
@@ -108,11 +108,11 @@ class NavBar extends React.Component {
     );
   }
 
-  rendeLangAndTitle() {
+  rendeLangAndTitle(): any {
     return <Block>{this.renderTitle()}</Block>;
   }
 
-  render() {
+  render(): any {
     const { theme, layout } = this.props;
     const { navBarHeight, statusBarHeight } = this.state;
 
@@ -130,11 +130,10 @@ class NavBar extends React.Component {
         break;
     }
 
-    // 4种布局，1 语言切换+搜索框；2 返回按钮+搜索框； 3 返回按钮+标题； 4 语言切换按钮+标题
     return (
       <View
         style={{
-          backgroundColor: "#f1b011",
+          backgroundColor: "#1E7D65",
           color: theme === "dark" ? "#FFFFFF" : "#000000"
         }}
       >

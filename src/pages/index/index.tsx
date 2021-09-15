@@ -1,9 +1,14 @@
 import React from "react";
-import { View } from "@tarojs/components";
+import NavBar from "../../components/navbar";
+// import { WingBlank, WhiteSpace, SearchBar } from "antd-mobile";
 
 const Index: React.FC = () => {
   // eslint-disable-next-line no-console
-  return <View>你好呀！！</View>;
+  return (
+    <div>
+      <NavBar layout={1} />
+    </div>
+  );
 };
 
 export default Index;

@@ -135,16 +135,10 @@ module.exports = {
         pathGroups: [
           { pattern: "apis/**", group: "internal" },
           { pattern: "common/**", group: "internal" },
-          { pattern: "components/**", group: "internal" },
-          { pattern: "constants/**", group: "internal" },
-          { pattern: "contexts/**", group: "internal" },
-          { pattern: "reducers/**", group: "internal" },
-          { pattern: "neetoui/**", group: "external" },
-          // react imports should be at the top.
-          { pattern: "react+(-native|)", group: "external", position: "before" }
+          { pattern: "components/**", group: "internal" }
         ],
         // Ignore react imports so that they're always ordered to the top of the file.
-        pathGroupsExcludedImportTypes: ["react", "react-native"]
+        pathGroupsExcludedImportTypes: ["react"]
       }
     ]
   },

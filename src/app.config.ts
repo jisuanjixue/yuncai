@@ -7,8 +7,8 @@ export default {
     "pages/my/index"
   ],
   window: {
-    navigationBarBackgroundColor: "#1E7D65",
-    navigationBarTitleText: "菜易通",
+    // navigationBarBackgroundColor: "#1E7D65",
+    // navigationBarTitleText: "菜易通",
     navigationBarTextStyle: "black",
     navigationStyle: "custom",
     //下拉刷新
@@ -22,8 +22,8 @@ export default {
     list: [
       {
         pagePath: "pages/index/index",
-        // iconPath: "./assets/images/unhome.png",
-        // selectedIconPath: "./assets/images/home.png",
+        iconPath: "./assets/images/unhome.png",
+        selectedIconPath: "./assets/images/home.png",
         text: "首页"
       },
       {
@@ -46,8 +46,8 @@ export default {
       // },
       {
         pagePath: "pages/my/index",
-        // iconPath: "./assets/images/unme.png",
-        // selectedIconPath: "./assets/images/me.png",
+        iconPath: "./assets/images/unme.png",
+        selectedIconPath: "./assets/images/me.png",
         text: "我的"
       }
     ]

@@ -5,8 +5,8 @@
   "appid": "wx00368c2a4e0070c2",
   "setting": {
     "urlCheck": true,
-    "es6": false,
-    "enhance": false,
+    "es6": true,
+    "enhance": true,
     "postcss": true,
     "preloadBackgroundData": false,
     "minified": true,
@@ -20,7 +20,7 @@
     "checkInvalidKey": true,
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
-    "compileHotReLoad": true,
+    "compileHotReLoad": false,
     "lazyloadPlaceholderEnable": false,
     "useMultiFrameRuntime": true,
     "useApiHook": true,
@@ -40,34 +40,8 @@
   },
   "compileType": "miniprogram",
   "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
-  "permission": {
-    "scope.userLocation": {
-      "desc": "你的位置信息将用于小程序位置接口的效果展示"
-    }
-  },
   "libVersion": "2.19.4",
   "scripts": {
     "beforeCompile": ""
-  },
-  "condition": {
-    "plugin": {
-      "list": []
-    },
-    "game": {
-      "list": []
-    },
-    "gamePlugin": {
-      "list": []
-    },
-    "miniprogram": {
-      "list": [
-        {
-          "name": "pages/index/index",
-          "pathName": "pages/index/index",
-          "scene": null
-        }
-      ]
-    }
   }
 }
