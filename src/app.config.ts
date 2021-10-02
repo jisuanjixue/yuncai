@@ -8,7 +8,7 @@ export default {
   ],
   window: {
     // navigationBarBackgroundColor: "#1E7D65",
-    // navigationBarTitleText: "菜易通",
+    // navigationBarTitleText: "葱易通",
     navigationBarTextStyle: "black",
     navigationStyle: "custom",
     //下拉刷新

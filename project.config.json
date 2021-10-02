@@ -1,8 +1,8 @@
 {
   "miniprogramRoot": "dist/",
-  "projectname": "yuncaiyitong",
-  "description": "菜易通",
-  "appid": "wx00368c2a4e0070c2",
+  "projectname": "congyitong",
+  "description": "葱易通",
+  "appid": "wx4a290b1d2398e661",
   "setting": {
     "urlCheck": true,
     "es6": true,
