@@ -4,7 +4,8 @@ module.exports = {
     browser: true,
     es6: true,
     commonjs: true,
-    node: true
+    node: true,
+    jest: true
   },
   parser: "@typescript-eslint/parser",
   /*

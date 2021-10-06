@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "../../components/navbar";
-// import { WingBlank, WhiteSpace, SearchBar } from "antd-mobile";
 
 const Index: React.FC = () => {
   // eslint-disable-next-line no-console

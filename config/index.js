@@ -28,19 +28,19 @@ const config = {
         pxtransformBlackList: [/am-/, /demo-/, /^body/]
       }
     ],
-    [
-      "@tarojs/plugin-mini-ci",
-      {
-        weapp: {
-          appid: "wx4a290b1d2398e661",
-          privateKeyPath: "key/private.appid.key"
-        },
-        // 版本号
-        version: "1.0.0",
-        // 版本发布描述
-        desc: "版本描述"
-      }
-    ],
+    // [
+    //   "@tarojs/plugin-mini-ci",
+    //   {
+    //     weapp: {
+    //       appid: "wx4a290b1d2398e661",
+    //       privateKeyPath: "key/private.appid.key"
+    //     },
+    //     // 版本号
+    //     version: "1.0.0",
+    //     // 版本发布描述
+    //     desc: "版本描述"
+    //   }
+    // ],
     "tarojs-router-next-plugin"
   ],
   copy: {

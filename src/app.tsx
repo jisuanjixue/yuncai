@@ -1,8 +1,6 @@
 import { Component } from "react";
 import Taro from "@tarojs/taro";
-// import { Provider } from "react-redux";
 import "taro-ui/dist/style/index.scss"; // 全局引入一次即可
-// import store from "./appStore";
 import "./app.css";
 import "./tailwind.css";
 
