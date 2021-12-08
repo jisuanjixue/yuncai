@@ -1,5 +1,14 @@
 import { Component } from "react";
 import Taro from "@tarojs/taro";
+import {
+  ApolloClient,
+  HttpLink,
+  ApolloLink,
+  InMemoryCache,
+  ApolloProvider
+} from "@apollo/client";
+// import { setApolloClient } from "taro-apollo";
+import wxApolloFetcher from "wx-apollo-fetcher";
 import "taro-ui/dist/style/index.scss"; // 全局引入一次即可
 import "./app.css";
 import "./tailwind.css";
@@ -49,6 +58,7 @@ class App extends Component {
   }
 
   componentDidShow(): any {
+    // eslint-disable-next-line no-console
     Taro.setKeepScreenOn({
       keepScreenOn: true
     });
@@ -72,7 +82,33 @@ class App extends Component {
   // 在 App 类中的 render() 函数没有实际作用
   // 请勿修改此函数
   render(): any {
-    return this.props.children;
+    const authMiddleware = authToken =>
+      new ApolloLink((operation, forward) => {
+        // add the authorization to the headers
+        if (authToken) {
+          operation.setContext({
+            headers: {
+              authorization: `Bearer ${authToken}`
+            }
+          });
+        }
+        return forward(operation);
+      });
+
+    const httpLink = new HttpLink({
+      uri: "http://localhost:3091/graphql",
+      fetch: wxApolloFetcher
+    });
+    const authToken = Taro.getStorageSync("authToken");
+    const client = new ApolloClient({
+      link: authMiddleware(authToken).concat(httpLink),
+      cache: new InMemoryCache()
+    });
+
+    return (
+      // eslint-disable-next-line react/react-in-jsx-scope
+      <ApolloProvider client={client}>{this.props.children}</ApolloProvider>
+    );
   }
 }
 

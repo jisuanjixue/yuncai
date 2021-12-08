@@ -4,7 +4,8 @@ export default {
     "pages/tradinghall/index",
     // "pages/release/release",
     // "pages/circle/circle",
-    "pages/my/index"
+    "pages/my/index",
+    "pages/auth/index"
   ],
   window: {
     // navigationBarBackgroundColor: "#1E7D65",
