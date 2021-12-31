@@ -87,7 +87,7 @@ class App extends Component {
         if (authToken) {
           operation.setContext({
             headers: {
-              authorization: `Bearer ${authToken}`
+              Authorization: `Bearer ${authToken}`
             }
           });
         }

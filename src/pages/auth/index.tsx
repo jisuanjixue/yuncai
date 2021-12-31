@@ -18,13 +18,13 @@ const Auth: React.FC<any> = () => {
           signUp({
             variables: {
               name: "bozai1",
-              email: "207823455@qq.com",
+              email: "207813830@qq.com",
               password: "abcd1234"
             }
           });
         }}
       >
-        <button type="submit">Add user</button>
+        <button type="submit">添加</button>
       </form>
     </div>
   ) as any;

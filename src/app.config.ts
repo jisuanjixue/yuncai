@@ -28,7 +28,7 @@ export default {
         text: "首页"
       },
       {
-        pagePath: "pages/tradinghall/index",
+        pagePath: "pages/auth/index",
         text: "交易大厅"
         // iconPath: "./assets/icon-jydt-nor.png",
         // selectedIconPath: "./assets/icon-jydt-sel.png"
