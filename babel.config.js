@@ -8,7 +8,7 @@ module.exports = {
         targets: {
           ios: "12"
         },
-        framework: "react",
+        framework: 'preact',
         ts: true
       }
     ]

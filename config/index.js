@@ -47,7 +47,7 @@ const config = {
     patterns: [],
     options: {}
   },
-  framework: "react",
+  framework: "preact",
   mini: {
     postcss: {
       tailwindcss: { enable: true },
