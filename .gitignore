@@ -15,6 +15,9 @@ yarn-debug.log*
 .yarnrc
 yarn-1.22.5.cjs
 yarn-1.22.5.js
+.yarn/cache
+.yarn/unplugged
+.yarn/install-state.gz
 
 
 # Ignore node_modules in cypress folder
